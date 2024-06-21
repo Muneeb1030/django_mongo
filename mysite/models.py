@@ -1,5 +1,6 @@
 from pymongo import MongoClient
-
+import os
+from django.conf import settings
 
 def get_db():
     """
@@ -13,7 +14,7 @@ def get_db():
     """
     
     # Connect to the MongoDB database
-    client = MongoClient("mongodb+srv://admin:myhomePassword@cluster0.m5kp7d2.mongodb.net/")
+    client = MongoClient(settings.MONGO_URI)
     
     # Get the 'new_db' database from the client
     db = client['new_db']

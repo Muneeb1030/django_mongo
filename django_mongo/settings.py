@@ -132,3 +132,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 import django_on_heroku
 django_on_heroku.settings(locals())
+
+import environ
+
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
+
+# MongoDB
+MONGO_URI = env('MONGO_URI')
