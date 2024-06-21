@@ -1,5 +1,4 @@
 amqp==5.2.0
-asgiref @ file:///C:/ci_311/asgiref_1676448296195/work
 asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1698341106958/work
 attrs==23.2.0
 backcall==0.2.0
@@ -10,9 +9,7 @@ blinker @ file:///C:/b/abs_d9y2dm7cw2/croot/blinker_1696539752170/work
 Bottleneck @ file:///C:/b/abs_f05kqh7yvj/croot/bottleneck_1707864273291/work
 celery==5.4.0
 certifi==2024.6.2
-cffi @ file:///C:/b/abs_78eb1_vq6z/croot/cffi_1714483206096/work
 charset-normalizer==3.3.2
-click @ file:///C:/b/abs_f9ihnt72pu/croot/click_1698129847492/work
 click-didyoumean==0.3.1
 click-plugins==1.1.1
 click-repl==0.3.0
