@@ -130,14 +130,13 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-import django_on_heroku
-django_on_heroku.settings(locals())
-
-import environ
-
-# Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 # MongoDB
-MONGO_URI = env('MONGO_URI')
+MONGO_URI = os.getenv("MONGO_URI")
+
+
+import django_on_heroku
+django_on_heroku.settings(locals())

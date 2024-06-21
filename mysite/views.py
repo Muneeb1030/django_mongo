@@ -12,8 +12,6 @@ from .serializers import BlogSerializer
 @api_view(['GET'])
 def get_blogs(request):
     client = MongoClient(settings.MONGO_URI)
-    
-    # Get the 'new_db' database from the client
     db = client['new_db']
     blogs = list(db.blog.find({}, {"_id":0}))
     return Response(blogs)
